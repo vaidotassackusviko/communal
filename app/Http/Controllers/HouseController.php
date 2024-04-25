@@ -11,18 +11,6 @@ class HouseController extends Controller
 {
     public function index()
     {
-        /*
-        if (Auth::check()) { // Patikrinkite, ar vartotojas yra prisijungęs
-            if (Auth::user()->hasRole('admin')) {
-                //echo "Vartotojas turi admin rolę";
-            } else {
-                //echo "Vartotojas neturi admin rolės";
-            }
-        } else {
-            //echo "Vartotojas nėra prisijungęs";
-        }
-        */
-
         $houses = House::all();
         return view('houses.index', compact('houses'));
     }

@@ -21,7 +21,7 @@
                             <input type="number" name="price" id="price" class="form-input rounded-md shadow-sm mt-1 block w-full" value="{{ $service->price }}" required />
                         </div>
                         <div class="mb-4">
-                            test - {{ $service->house_id }} - {{ $service->price }}
+
                             <label for="house_id" class="block text-gray-700 text-sm font-bold mb-2">Susijęs namas:</label>
                             <select name="house_id" id="house_id" class="form-select rounded-md shadow-sm mt-1 block w-full">
                                 <option value="" disabled>Pasirinkite namą</option>

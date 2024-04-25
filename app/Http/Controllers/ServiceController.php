@@ -11,7 +11,6 @@ class ServiceController extends Controller
     public function index()
     {
         $services = Service::with('house')->get();
-        //$services = Service::all();
         return view('services.index', compact('services'));
     }
 
@@ -45,7 +44,7 @@ class ServiceController extends Controller
     {
         $service = Service::findOrFail($id);
 
-        print_r($service);
+        //print_r($service);
         $houses = House::all();
         return view('services.edit', compact('service', 'houses'));
     }
